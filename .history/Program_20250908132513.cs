@@ -12,20 +12,22 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 // Add Identity
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
-    options.Password.RequireDigit = false;
+    options.Password.RequireDigit = false; // My own validation
     options.Password.RequireLowercase = false;
     options.Password.RequireUppercase = false;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequiredLength = 8;
 })
 .AddEntityFrameworkStores<ApplicationDbContext>()
-.AddDefaultTokenProviders()
-.AddDefaultUI(); // если используете стандартный UI Identity
-
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+.AddDefaultTokenProviders();
 
 var app = builder.Build();
 
