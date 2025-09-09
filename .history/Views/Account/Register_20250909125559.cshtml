@@ -1,0 +1,15 @@
+@using FinancialManagement.ViewModels
+@model RegisterViewModel
+@{
+    ViewData["Title"] = "Sign up for a new account";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Register" method="post" novalidate>
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+</form>

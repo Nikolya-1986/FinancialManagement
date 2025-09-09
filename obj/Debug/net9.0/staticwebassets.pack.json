@@ -2,7 +2,11 @@
   "Files": [
     {
       "Id": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FinancialManagement.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FinancialManagement.izw0k1uyzm.bundle.scp.css"
+      "PackagePath": "staticwebassets\\FinancialManagement.2h5qc7fpbc.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\wwwroot\\css\\Account\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Account\\Register.css"
     },
     {
       "Id": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\wwwroot\\css\\site.css",

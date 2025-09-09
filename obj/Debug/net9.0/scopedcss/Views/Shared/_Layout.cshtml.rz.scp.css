@@ -1,5 +1,16 @@
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+body[b-619u2mh994], html[b-619u2mh994] {
+  height: 100%;
+  margin: 0;
+}
+
+body[b-619u2mh994] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 a.navbar-brand[b-619u2mh994] {
   white-space: normal;

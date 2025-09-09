@@ -284,8 +284,6 @@ D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compre
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\a6vf3werav-muycvpuwrr.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\bphil5auje-87fc7y1x7t.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\eddhv2ggls-mlv21k5csn.gz
-D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\lslmb14icz-izw0k1uyzm.gz
-D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\noekablawi-izw0k1uyzm.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\staticwebassets.build.json
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\staticwebassets.development.json
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -301,3 +299,6 @@ D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\refint
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\FinancialManagement.pdb
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\FinancialManagement.genruntimeconfig.cache
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\ref\FinancialManagement.dll
+D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\z9xlc8flbr-mh02nwc2zm.gz
+D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\lslmb14icz-2h5qc7fpbc.gz
+D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\noekablawi-2h5qc7fpbc.gz

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "42NgPDyYtYecOhiHr3hz/dnby6SD0lMjDXTqK1J9B6M=",
+  "Hash": "PopN9CTRRzaR1OVJpsnRgwxZ5dTyrsCTJgqUdCWt9Pw=",
   "Source": "FinancialManagement",
   "BasePath": "_content/FinancialManagement",
   "Mode": "Default",
@@ -2957,12 +2957,12 @@
       "OriginalItemSpec": "C:\\Users\\Николай\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.8\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-izw0k1uyzm.gz",
+      "Identity": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-2h5qc7fpbc.gz",
       "SourceId": "FinancialManagement",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/FinancialManagement",
-      "RelativePath": "FinancialManagement#[.{fingerprint=izw0k1uyzm}]?.styles.css.gz",
+      "RelativePath": "FinancialManagement#[.{fingerprint=2h5qc7fpbc}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -2971,8 +2971,8 @@
       "RelatedAsset": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FinancialManagement.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "bat9la8tj1",
-      "Integrity": "fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=",
+      "Fingerprint": "64cfd37won",
+      "Integrity": "6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FinancialManagement.styles.css"
@@ -3020,12 +3020,12 @@
       "OriginalItemSpec": "C:\\Users\\Николай\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.8\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-izw0k1uyzm.gz",
+      "Identity": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-2h5qc7fpbc.gz",
       "SourceId": "FinancialManagement",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/FinancialManagement",
-      "RelativePath": "FinancialManagement#[.{fingerprint=izw0k1uyzm}]!.bundle.scp.css.gz",
+      "RelativePath": "FinancialManagement#[.{fingerprint=2h5qc7fpbc}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -3034,8 +3034,8 @@
       "RelatedAsset": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FinancialManagement.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "bat9la8tj1",
-      "Integrity": "fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=",
+      "Fingerprint": "64cfd37won",
+      "Integrity": "6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FinancialManagement.bundle.scp.css"
@@ -3944,6 +3944,27 @@
       "OriginalItemSpec": "C:\\Users\\Николай\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.8\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
+      "Identity": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\z9xlc8flbr-mh02nwc2zm.gz",
+      "SourceId": "FinancialManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/FinancialManagement",
+      "RelativePath": "css/Account/Register#[.{fingerprint=mh02nwc2zm}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\wwwroot\\css\\Account\\Register.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3eov1tss8s",
+      "Integrity": "O4LRgG2N4JwXfG8FNi/jBqR8xz8HUDT61oGhmO2yAP4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\wwwroot\\css\\Account\\Register.css"
+    },
+    {
       "Identity": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\zap00c0tb5-63fj8s7r0e.gz",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -4000,8 +4021,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "izw0k1uyzm",
-      "Integrity": "/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=",
+      "Fingerprint": "2h5qc7fpbc",
+      "Integrity": "NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FinancialManagement.styles.css"
@@ -4021,11 +4042,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "izw0k1uyzm",
-      "Integrity": "/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=",
+      "Fingerprint": "2h5qc7fpbc",
+      "Integrity": "NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FinancialManagement.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\wwwroot\\css\\Account\\Register.css",
+      "SourceId": "FinancialManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\wwwroot\\",
+      "BasePath": "_content/FinancialManagement",
+      "RelativePath": "css/Account/Register#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mh02nwc2zm",
+      "Integrity": "BlownwmezZKXhTb6lR/Hi7SxO5RwVxV1qFzHu0rRM8Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Account\\Register.css"
     },
     {
       "Identity": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\wwwroot\\css\\site.css",
@@ -5353,6 +5395,304 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/Account/Register.css",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\z9xlc8flbr-mh02nwc2zm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002141327623"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O4LRgG2N4JwXfG8FNi/jBqR8xz8HUDT61oGhmO2yAP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 10:39:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BlownwmezZKXhTb6lR/Hi7SxO5RwVxV1qFzHu0rRM8Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlownwmezZKXhTb6lR/Hi7SxO5RwVxV1qFzHu0rRM8Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/Account/Register.css",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\wwwroot\\css\\Account\\Register.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlownwmezZKXhTb6lR/Hi7SxO5RwVxV1qFzHu0rRM8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 10:39:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlownwmezZKXhTb6lR/Hi7SxO5RwVxV1qFzHu0rRM8Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/Account/Register.css.gz",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\z9xlc8flbr-mh02nwc2zm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O4LRgG2N4JwXfG8FNi/jBqR8xz8HUDT61oGhmO2yAP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 10:39:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O4LRgG2N4JwXfG8FNi/jBqR8xz8HUDT61oGhmO2yAP4="
+        }
+      ]
+    },
+    {
+      "Route": "css/Account/Register.mh02nwc2zm.css",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\z9xlc8flbr-mh02nwc2zm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002141327623"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O4LRgG2N4JwXfG8FNi/jBqR8xz8HUDT61oGhmO2yAP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 10:39:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BlownwmezZKXhTb6lR/Hi7SxO5RwVxV1qFzHu0rRM8Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mh02nwc2zm"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Account/Register.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlownwmezZKXhTb6lR/Hi7SxO5RwVxV1qFzHu0rRM8Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/Account/Register.mh02nwc2zm.css",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\wwwroot\\css\\Account\\Register.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlownwmezZKXhTb6lR/Hi7SxO5RwVxV1qFzHu0rRM8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 10:39:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mh02nwc2zm"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Account/Register.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlownwmezZKXhTb6lR/Hi7SxO5RwVxV1qFzHu0rRM8Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/Account/Register.mh02nwc2zm.css.gz",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\z9xlc8flbr-mh02nwc2zm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O4LRgG2N4JwXfG8FNi/jBqR8xz8HUDT61oGhmO2yAP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 10:39:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mh02nwc2zm"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Account/Register.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O4LRgG2N4JwXfG8FNi/jBqR8xz8HUDT61oGhmO2yAP4="
+        }
+      ]
+    },
+    {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\0gu0rsyk30-b9sayid5wm.gz",
       "Selectors": [
@@ -5949,13 +6289,13 @@
       ]
     },
     {
-      "Route": "FinancialManagement.bundle.scp.css",
-      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-izw0k1uyzm.gz",
+      "Route": "FinancialManagement.2h5qc7fpbc.bundle.scp.css",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-2h5qc7fpbc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001828153565"
+          "Quality": "0.001639344262"
         }
       ],
       "ResponseHeaders": [
@@ -5965,19 +6305,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "546"
+          "Value": "609"
         },
         {
           "Name": "ETag",
-          "Value": "\"fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=\""
+          "Value": "\"6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -5993,18 +6333,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=\""
+          "Value": "W/\"NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "2h5qc7fpbc"
+        },
+        {
+          "Name": "label",
+          "Value": "FinancialManagement.bundle.scp.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c="
+          "Value": "sha256-NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs="
         }
       ]
     },
     {
-      "Route": "FinancialManagement.bundle.scp.css",
+      "Route": "FinancialManagement.2h5qc7fpbc.bundle.scp.css",
       "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FinancialManagement.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6014,7 +6362,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "1328"
         },
         {
           "Name": "Content-Type",
@@ -6022,121 +6370,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=\""
+          "Value": "\"NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c="
-        }
-      ]
-    },
-    {
-      "Route": "FinancialManagement.bundle.scp.css.gz",
-      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-izw0k1uyzm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "546"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc="
-        }
-      ]
-    },
-    {
-      "Route": "FinancialManagement.izw0k1uyzm.bundle.scp.css",
-      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-izw0k1uyzm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001828153565"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "546"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "izw0k1uyzm"
+          "Value": "2h5qc7fpbc"
         },
         {
           "Name": "label",
@@ -6144,13 +6392,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c="
+          "Value": "sha256-NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs="
         }
       ]
     },
     {
-      "Route": "FinancialManagement.izw0k1uyzm.bundle.scp.css",
-      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FinancialManagement.bundle.scp.css",
+      "Route": "FinancialManagement.2h5qc7fpbc.bundle.scp.css.gz",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-2h5qc7fpbc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6159,7 +6407,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "609"
         },
         {
           "Name": "Content-Type",
@@ -6167,56 +6415,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=\""
+          "Value": "\"6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "izw0k1uyzm"
-        },
-        {
-          "Name": "label",
-          "Value": "FinancialManagement.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c="
-        }
-      ]
-    },
-    {
-      "Route": "FinancialManagement.izw0k1uyzm.bundle.scp.css.gz",
-      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-izw0k1uyzm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "546"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6234,7 +6437,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "izw0k1uyzm"
+          "Value": "2h5qc7fpbc"
         },
         {
           "Name": "label",
@@ -6242,18 +6445,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc="
+          "Value": "sha256-6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM="
         }
       ]
     },
     {
-      "Route": "FinancialManagement.izw0k1uyzm.styles.css",
-      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-izw0k1uyzm.gz",
+      "Route": "FinancialManagement.2h5qc7fpbc.styles.css",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-2h5qc7fpbc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001828153565"
+          "Quality": "0.001639344262"
         }
       ],
       "ResponseHeaders": [
@@ -6263,15 +6466,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "546"
+          "Value": "609"
         },
         {
           "Name": "ETag",
-          "Value": "\"fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=\""
+          "Value": "\"6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6291,13 +6494,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=\""
+          "Value": "W/\"NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "izw0k1uyzm"
+          "Value": "2h5qc7fpbc"
         },
         {
           "Name": "label",
@@ -6305,12 +6508,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c="
+          "Value": "sha256-NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs="
         }
       ]
     },
     {
-      "Route": "FinancialManagement.izw0k1uyzm.styles.css",
+      "Route": "FinancialManagement.2h5qc7fpbc.styles.css",
       "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FinancialManagement.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6320,7 +6523,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "1328"
         },
         {
           "Name": "Content-Type",
@@ -6328,11 +6531,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=\""
+          "Value": "\"NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6342,7 +6545,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "izw0k1uyzm"
+          "Value": "2h5qc7fpbc"
         },
         {
           "Name": "label",
@@ -6350,13 +6553,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c="
+          "Value": "sha256-NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs="
         }
       ]
     },
     {
-      "Route": "FinancialManagement.izw0k1uyzm.styles.css.gz",
-      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-izw0k1uyzm.gz",
+      "Route": "FinancialManagement.2h5qc7fpbc.styles.css.gz",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-2h5qc7fpbc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6365,7 +6568,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "546"
+          "Value": "609"
         },
         {
           "Name": "Content-Type",
@@ -6373,11 +6576,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=\""
+          "Value": "\"6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6395,7 +6598,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "izw0k1uyzm"
+          "Value": "2h5qc7fpbc"
         },
         {
           "Name": "label",
@@ -6403,18 +6606,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc="
+          "Value": "sha256-6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM="
         }
       ]
     },
     {
-      "Route": "FinancialManagement.styles.css",
-      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-izw0k1uyzm.gz",
+      "Route": "FinancialManagement.bundle.scp.css",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-2h5qc7fpbc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001828153565"
+          "Quality": "0.001639344262"
         }
       ],
       "ResponseHeaders": [
@@ -6424,15 +6627,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "546"
+          "Value": "609"
         },
         {
           "Name": "ETag",
-          "Value": "\"fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=\""
+          "Value": "\"6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6452,13 +6655,150 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=\""
+          "Value": "W/\"NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c="
+          "Value": "sha256-NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs="
+        }
+      ]
+    },
+    {
+      "Route": "FinancialManagement.bundle.scp.css",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FinancialManagement.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs="
+        }
+      ]
+    },
+    {
+      "Route": "FinancialManagement.bundle.scp.css.gz",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\noekablawi-2h5qc7fpbc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "609"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM="
+        }
+      ]
+    },
+    {
+      "Route": "FinancialManagement.styles.css",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-2h5qc7fpbc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001639344262"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "609"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs="
         }
       ]
     },
@@ -6473,7 +6813,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "1328"
         },
         {
           "Name": "Content-Type",
@@ -6481,11 +6821,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c=\""
+          "Value": "\"NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6495,13 +6835,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/j7vwzgIyv8TB9xShkzsmlmuHEVfT72R55NZWjuh++c="
+          "Value": "sha256-NtYh8hpjkakTMynpN2Y5a5g9REbx+M8oYy9x2Tn1DSs="
         }
       ]
     },
     {
       "Route": "FinancialManagement.styles.css.gz",
-      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-izw0k1uyzm.gz",
+      "AssetFile": "D:\\Work\\Projects\\C#\\ASP.Net.Core_MVC\\FinancialManagement\\obj\\Debug\\net9.0\\compressed\\lslmb14icz-2h5qc7fpbc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6510,7 +6850,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "546"
+          "Value": "609"
         },
         {
           "Name": "Content-Type",
@@ -6518,11 +6858,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc=\""
+          "Value": "\"6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 05 Sep 2025 07:05:47 GMT"
+          "Value": "Tue, 09 Sep 2025 10:50:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6540,7 +6880,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fabX6YvYhgPB6q8xZBHcfiG59vUR2qHDKrRXF4aFiXc="
+          "Value": "sha256-6ovikJbQs1Sh/3OEpztsbec9x96Ei4sOhcoJdUOJQVM="
         }
       ]
     },
