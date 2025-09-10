@@ -4,14 +4,12 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>@ViewData["Title"] - FinancialManagement</title>
-        <!-- Bootstrap CSS через CDN -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-        <!-- Ваши локальные стили с кэшбустингом -->
+        <script type="importmap"></script>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/FinancialManagement.styles.css" asp-append-version="true" />
-
-    @RenderSection("Styles", required: false)
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+        @RenderSection("Styles", required: false)
     </head>
     <body>
         <header>
@@ -66,15 +64,13 @@
             </div>
         </footer>
         @{
-            var errors = ViewData.ModelState.Values.SelectMany(v => v.Errors)
-                .Where(e => !string.IsNullOrEmpty(e.ErrorMessage)).ToList();
+            var errors = ViewData.ModelState.Values.SelectMany(v => v.Errors).Where(e => !string.IsNullOrEmpty(e.ErrorMessage)).ToList();
         }
 
         @if (errors.Any())
         {
-            <div class="position-fixed top-0 end-0 p-3 toast-container" style="z-index: 1051;">
-                <div id="errorToast" class="toast show align-items-center text-bg-danger border-0" 
-                    role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="position-fixed top-0 end-0 p-3" style="z-index: 1051; min-width: 300px;">
+                <div id="errorToast" class="toast show align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="d-flex">
                         <div class="toast-body">
                             @foreach (var err in errors)
@@ -82,19 +78,15 @@
                                 <div>@err.ErrorMessage</div>
                             }
                         </div>
-                        <button type="button" class="btn-close btn-close-white me-2 m-auto" 
-                                data-bs-dismiss="toast" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
                     </div>
                 </div>
             </div>
         }
-
-        <!-- JQuery (если нужен) -->
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <!-- Bootstrap JS Bundle (popper + bootstrap.js) через CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Ваш JS с кэшбустингом -->
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -105,7 +97,6 @@
                 }
             });
         </script>
-
         @await RenderSectionAsync("Scripts", required: false)
     </body>
 </html>

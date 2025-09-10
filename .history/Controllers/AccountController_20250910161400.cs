@@ -46,7 +46,6 @@ namespace FinancialManagement.Controllers
             var user = new ApplicationUser
             {
                 UniqueId = Guid.NewGuid(),
-                UserName = model.Email,
                 Email = model.Email,
                 Name = model.Name,
                 Tariff = Tariff.Simple,
@@ -64,7 +63,6 @@ namespace FinancialManagement.Controllers
 
                 // Назначаем роль User
                 await _userManager.AddToRoleAsync(user, Role.User.ToString());
-                // Автоматический вход после регистрации
                 await _signInManager.SignInAsync(user, isPersistent: false);
                 return RedirectToAction("Index", "Home");
             }

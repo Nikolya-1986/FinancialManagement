@@ -25,7 +25,7 @@ body {
 }
 
 .toast-container {
-  min-width: 300px;
+  width: 300px;
   max-width: 90vw;
 }
 
@@ -37,8 +37,8 @@ body {
 
 @media (max-width: 576px) {
   .toast-container {
-    width: 95vw;
-    right: 2.5vw !important;
-    top: 1rem !important;
+      width: 95vw;
+      right: 2.5vw !important;
+      top: 1rem !important;
   }
 }
