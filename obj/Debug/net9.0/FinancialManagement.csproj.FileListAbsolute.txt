@@ -293,11 +293,11 @@ D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\Financ
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\FinancialManagement.genruntimeconfig.cache
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\ref\FinancialManagement.dll
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\z9xlc8flbr-mh02nwc2zm.gz
-D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\lslmb14icz-2h5qc7fpbc.gz
-D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\noekablawi-2h5qc7fpbc.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\rpswa.dswa.cache.json
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\rjimswa.dswa.cache.json
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\0gu0rsyk30-vv8av5lcad.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\staticwebassets.build.json.cache
+D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\0gu0rsyk30-264dbovzjw.gz
+D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\lslmb14icz-2h5qc7fpbc.gz
+D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\noekablawi-2h5qc7fpbc.gz
