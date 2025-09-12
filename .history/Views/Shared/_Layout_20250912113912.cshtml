@@ -87,7 +87,7 @@
                 </div>
             </div>
         }
-
+        
         @if (errors.Any())
         {
             <div class="position-fixed top-0 end-0 p-3 toast-container" style="z-index: 1051;">
@@ -118,16 +118,9 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                var successToast = document.getElementById('successToast');
-                var errorToast = document.getElementById('errorToast');
-                
-                if (successToast) {
-                    var toast = new bootstrap.Toast(successToast, { delay: 5000 });
-                    toast.show();
-                }
-
-                if (errorToast) {
-                    var toast = new bootstrap.Toast(errorToast, { delay: 5000 });
+                var toastEl = document.getElementById('errorToast');
+                if (toastEl) {
+                    var toast = new bootstrap.Toast(toastEl, { delay: 5000 });
                     toast.show();
                 }
             });

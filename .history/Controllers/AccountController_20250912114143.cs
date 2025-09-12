@@ -55,7 +55,7 @@ namespace FinancialManagement.Controllers
 
             if (isSuccess)
             {
-                await _userRepository.AddToRoleAsync(user, Role.Admin.ToString());
+                await _userRepository.AddToRoleAsync(user, Role.Manager.ToString());
                 // Автоматический вход после регистрации
                 await _signInManager.SignInAsync(user, isPersistent: false);
                 TempData["SuccessMessage"] = "The user has been successfully registered!";
