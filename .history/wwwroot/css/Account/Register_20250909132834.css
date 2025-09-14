@@ -1,0 +1,6 @@
+.account-form {
+    margin: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
