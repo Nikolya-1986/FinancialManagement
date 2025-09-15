@@ -1,0 +1,13 @@
+/* Кнопка показать/скрыть пароль */
+.password-toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 13px;
+    top: 35px;
+    user-select: none;
+    color: #6c757d;
+}
+
+.position-container {
+    position: relative;
+}

@@ -1,0 +1,78 @@
+@using FinancialManagement.ViewModels
+@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login to account";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/Account/Login.css" />
+    <style>
+        /* Кнопка показать/скрыть пароль */
+        .password-toggle {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 38px;
+            user-select: none;
+            color: #6c757d;
+        }
+        .position-relative {
+            position: relative;
+        }
+    </style>
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+            <h2 class="text-center">@ViewData["Title"]</h2>
+
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { novalidate = "novalidate" }))
+            {
+                @Html.AntiForgeryToken()
+                
+                <div class="form-group mb-3">
+                    <label asp-for="Email" class="mb-1"></label>
+                    <input asp-for="Email" class="form-control" autocomplete="username" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3 position-relative">
+                    <label asp-for="Password" class="mb-1"></label>
+                    <input asp-for="Password" type="password" id="Password" class="form-control" autocomplete="current-password" />
+                    <span class="password-toggle" data-target="Password" title="Показать/Скрыть пароль">👁️</span>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input asp-for="RememberMe" class="form-check-input" id="RememberMe" />
+                    <label asp-for="RememberMe" class="form-check-label"></label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Войти</button>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Кнопка показать/скрыть пароль (аналогично регистрации)
+        document.querySelectorAll('.password-toggle').forEach(function (toggle) {
+            toggle.addEventListener('click', function () {
+                var targetId = this.getAttribute('data-target');
+                var input = document.getElementById(targetId);
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    this.textContent = '🙈';
+                } else {
+                    input.type = 'password';
+                    this.textContent = '👁️';
+                }
+            });
+        });
+    </script>
+}
