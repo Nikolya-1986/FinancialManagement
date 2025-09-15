@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/FinancialManagement.styles.css" asp-append-version="true" />
 
-        @RenderSection("Styles", required: false)
+    @RenderSection("Styles", required: false)
     </head>
     <body>
         <header>
@@ -44,12 +44,11 @@
                             @if (User.Identity.IsAuthenticated)
                             {
                                 <li class="nav-item">
-                                    <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
-                                        @Html.AntiForgeryToken()
-                                        <button type="submit" class="nav-link btn btn-link text-dark" style="padding:0; border:none; background:none;">
-                                            Logout
-                                        </button>
-                                    </form>
+                                    <a class="nav-link text-dark
+                                        @(NavigationHelper.GeActiveClass(ViewContext, "Account", "Login"))"
+                                        asp-controller="Account" asp-action="Login"
+                                        >Login
+                                    </a>
                                 </li>
                             }
                             else

@@ -76,10 +76,6 @@ namespace FinancialManagement.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        // ValidateAntiForgeryToken его отключать не рекомендуется. Это стандартная и важная мера защиты, которая способствует безопасности вашего приложения.
-        // В случае logout — это особенно важно, потому что злоумышленник не сможет инициировать выход пользователя через поддельный POST-запрос без 
-        // правильного токена.
-        // Он должен оставаться, чтобы обеспечить безопасную защиту от CSRF. В форме для logout обязательно вставляйте @Html.AntiForgeryToken(), как в прошлом примере.
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
