@@ -18,37 +18,28 @@
         <header>
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
                 <div class="container-fluid">
-                    <span class="navbar-brand">FinancialManagement</span>
-                    <button class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                            >
+                    <div>FinancialManagement</<div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            <ul class="navbar-nav me-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark
-                                        @(NavigationHelper.GeActiveClass(ViewContext, "Home", "Index"))"
-                                        asp-controller="Home" asp-action="Index"
-                                        >Home
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark
-                                        @(NavigationHelper.GeActiveClass(ViewContext, "Home", "Privacy"))"
-                                        asp-controller="Home" asp-action="Privacy"
-                                        >Privacy
-                                    </a>
-                                </li>
-                            </ul>
-                        }
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark
+                                    @(NavigationHelper.GeActiveClass(ViewContext, "Home", "Index"))"
+                                    asp-controller="Home" asp-action="Index"
+                                    >Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark
+                                    @(NavigationHelper.GeActiveClass(ViewContext, "Home", "Privacy"))"
+                                    asp-controller="Home" asp-action="Privacy"
+                                    >Privacy
+                                </a>
+                            </li>
+                        </ul>
                         <ul class="navbar-nav ms-auto">
                             @if (User.Identity.IsAuthenticated)
                             {
