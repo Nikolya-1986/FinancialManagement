@@ -108,8 +108,8 @@ namespace FinancialManagement.Controllers
                         }
                         else
                         {
-                            TempData["SuccessMessage"] = "You have successfully logged into your account.";
                             return RedirectToAction("Index", "Home");
+                            // return View(model);
                         }
                     }
                     else
@@ -119,8 +119,6 @@ namespace FinancialManagement.Controllers
                     }
                 }
             }
-            // Если мы дошли сюда — значит user == null или password неверен — возвращаем View с ошибками// Если мы дошли сюда — значит user == null
-            // или password неверен — возвращаем View с ошибками
             ViewData["ReturnUrl"] = returnUrl;
             return View(model);
         }
