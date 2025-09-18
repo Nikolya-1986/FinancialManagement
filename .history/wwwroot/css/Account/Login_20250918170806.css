@@ -1,0 +1,24 @@
+/* Кнопка показать/скрыть пароль */
+.password-toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 13px;
+    top: 35px;
+    user-select: none;
+    color: #6c757d;
+}
+
+.captcha-wrapper {
+    width: 100%; /* или любая другая ширина родителя */
+    max-width: 400px; /* можно ограничить */
+    overflow: hidden;
+  }
+  
+  /* Затем масштабируем капчу по ширине */
+  .captcha-wrapper .g-recaptcha {
+    transform-origin: 0 0;
+    transform: scale(1.2); /* тут задаёте желаемый масштаб */
+    /* Можно подправить высоту контейнера, чтобы капча целиком показывалась */
+    height: 78px; /* стандартная высота капчи */
+    width: 304px; /* стандартная ширина (можно рассчитывать с учетом масштаба) */
+  }

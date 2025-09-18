@@ -83,12 +83,12 @@ namespace FinancialManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, [FromForm(Name = "g-recaptcha-response")] string recaptchaResponse, string returnUrl = null!)
         {
-            // if (!await _recaptchaService.VerifyAsync(recaptchaResponse))
-            // {
-            //     ModelState.AddModelError(string.Empty, "Пожалуйста, подтвердите, что вы не робот.");
-            //     ViewData["ReturnUrl"] = returnUrl;
-            //     return View(model);
-            // }
+            if (!await _recaptchaService.VerifyAsync(recaptchaResponse))
+            {
+                ModelState.AddModelError(string.Empty, "Пожалуйста, подтвердите, что вы не робот.");
+                ViewData["ReturnUrl"] = returnUrl;
+                return View(model);
+            }
 
             var user = await _userRepository.GetByEmailAsync(model.Email);
             if (user == null)
