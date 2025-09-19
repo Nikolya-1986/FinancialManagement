@@ -2,6 +2,8 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using FinancialManagement.Models;
 using FinancialManagement.Interfaces;
+using Microsoft.AspNetCore.Identity;
+using FinancialManagement.Data;
 using FinancialManagement.ViewModels;
 
 namespace FinancialManagement.Controllers;

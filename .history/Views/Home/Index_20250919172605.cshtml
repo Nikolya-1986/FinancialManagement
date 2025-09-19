@@ -1,0 +1,12 @@
+﻿@model FinancialManagement.Data.ApplicationUser
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (User.Identity.IsAuthenticated && Model != null)
+{
+    <h2>Добро пожаловать, @Model.FullName!</h2>
+    <p>Email: @Model.Email</p>
+    <!-- любое другое отображение данных -->
+}

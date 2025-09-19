@@ -2,7 +2,6 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using FinancialManagement.Models;
 using FinancialManagement.Interfaces;
-using FinancialManagement.ViewModels;
 
 namespace FinancialManagement.Controllers;
 
@@ -19,23 +18,14 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
-        if (User.Identity!.IsAuthenticated)
+        if (User.Identity.IsAuthenticated)
         {
             var email = User.Identity.Name;
-            var user = await _userRepository.GetByEmailAsync(email!);
+            var user = await _userRepository.GetByEmailAsync(email);
+
             if (user != null)
             {
-                IList<string> roles = await _userRepository.GetRolesAsync(user);
-                string userRole = roles.FirstOrDefault() ?? "Role not assigned";
-                var model = new UserViewModel
-                {
-                    Id = user.UniqueId,
-                    Name = user.Name,
-                    Email = user.Email!,
-                    Tariff = user.Tariff,
-                    Role = userRole
-                };
-                return View(model);
+                return View(user);
             }
         }
         return View();

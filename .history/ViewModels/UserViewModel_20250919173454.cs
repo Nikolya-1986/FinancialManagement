@@ -1,0 +1,14 @@
+using FinancialManagement.Data;
+
+namespace FinancialManagement.ViewModels
+
+{
+    public class UserViewModel
+    {
+        public Guid Id { get; set;  }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public Tariff Tariff { get; set; }
+        public string Role { get; set; }
+    }
+}
