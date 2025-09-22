@@ -47,16 +47,13 @@
                                         >Privacy
                                     </a>
                                 </li>
-                                @if (User.IsInRole("Admin"))
-                                {
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark
-                                            @(NavigationHelper.GeActiveClass(ViewContext, "Users", "Index"))"
-                                            asp-controller="Users" asp-action="Index"
-                                            >Users
-                                        </a>
-                                    </li>
-                                }
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark
+                                        @(NavigationHelper.GeActiveClass(ViewContext, "Users", "Index"))"
+                                        asp-controller="Users" asp-action="Index"
+                                        >Users
+                                    </a>
+                                </li>
                             </ul>
                         }
                         <ul class="navbar-nav ms-auto">
