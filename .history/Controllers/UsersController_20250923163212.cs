@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
-using FinancialManagement.ViewModels;
 using FinancialManagement.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using FinancialManagement.Data;
+using FinancialManagement.ViewModels;
 using System.Security.Claims;
+using FinancialManagement.Data;
 
 namespace FinancialManagement.Controllers
 {

@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
-using FinancialManagement.ViewModels;
 using FinancialManagement.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using FinancialManagement.Data;
+using FinancialManagement.ViewModels;
 using System.Security.Claims;
+using FinancialManagement.Data;
 
 namespace FinancialManagement.Controllers
 {
@@ -24,8 +24,7 @@ namespace FinancialManagement.Controllers
             ApplicationUser currentUser = await _userRepository.GetByIdAsync(currentUserId);
             List<ApplicationUser> allUsers = await _userRepository.GetAllAsync();
             // Исключаем текущего пользователя из списка
-            List<ApplicationUser> otherUsers = allUsers.Where(u => u.Id != currentUser.Id).ToList();
-            // Формируем модель для view
+            List<ApplicationUser> otherUsers = allUsers.Where(u => u.Id == currentUser.Id).ToList();
             List<UserViewModel> userViewModels = new List<UserViewModel>();
 
             foreach (var user in allUsers)

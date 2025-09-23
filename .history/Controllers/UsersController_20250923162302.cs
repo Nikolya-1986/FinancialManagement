@@ -1,9 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
-using FinancialManagement.ViewModels;
 using FinancialManagement.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using FinancialManagement.Data;
-using System.Security.Claims;
+using FinancialManagement.ViewModels;
 
 namespace FinancialManagement.Controllers
 {
@@ -19,16 +17,10 @@ namespace FinancialManagement.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
-            // Получаем id текущего пользователя из ClaimsPrincipal
-            string currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier)!;
-            ApplicationUser currentUser = await _userRepository.GetByIdAsync(currentUserId);
-            List<ApplicationUser> allUsers = await _userRepository.GetAllAsync();
-            // Исключаем текущего пользователя из списка
-            List<ApplicationUser> otherUsers = allUsers.Where(u => u.Id != currentUser.Id).ToList();
-            // Формируем модель для view
-            List<UserViewModel> userViewModels = new List<UserViewModel>();
+            var users = await _userRepository.GetAllAsync();
+            var userViewModels = new List<UserViewModel>();
 
-            foreach (var user in allUsers)
+            foreach (var user in users)
             {
                 var roles = await _userRepository.GetRolesAsync(user);
                 var role = roles.FirstOrDefault() ?? "NoRole";

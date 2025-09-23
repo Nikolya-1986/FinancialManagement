@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
-using FinancialManagement.ViewModels;
 using FinancialManagement.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using FinancialManagement.Data;
+using FinancialManagement.ViewModels;
 using System.Security.Claims;
+using FinancialManagement.Data;
 
 namespace FinancialManagement.Controllers
 {
@@ -28,7 +28,7 @@ namespace FinancialManagement.Controllers
             // Формируем модель для view
             List<UserViewModel> userViewModels = new List<UserViewModel>();
 
-            foreach (var user in allUsers)
+            foreach (var user in otherUsers)
             {
                 var roles = await _userRepository.GetRolesAsync(user);
                 var role = roles.FirstOrDefault() ?? "NoRole";

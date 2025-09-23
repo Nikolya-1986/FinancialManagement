@@ -1,0 +1,42 @@
+@model IEnumerable<FinancialManagement.ViewModels.UserViewModel>
+@{
+    ViewData["Title"] = "Users";
+}
+<style>
+    .role-admin { color: green; }
+    .role-manager { color: purple; }
+    .role-default { color: black; }
+</style>
+@section Styles {
+    <link rel="stylesheet" href="~/css/Users/Users.css" />
+}
+
+ <h2 class="text-center">@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Имя пользователя</th>
+            <th>Email</th>
+            <th>Tariff</th>
+            <th>Роли</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            var roleClass = user.Role?.ToLower() switch
+            {
+                "admin" => "role-admin",
+                "manager" => "role-manager",
+                _ => "role-default"
+            };
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Tariff</td>
+                <td class="@roleClass">@user.Role</td>
+            </tr>
+        }
+    </tbody>
+</table>
