@@ -60,8 +60,8 @@ namespace FinancialManagement.Controllers
                 TempData["Error"] = "Не удалось удалить пользователя.";
             }
 
-            var users =  await _userRepository.GetAllAsync();
-            return View("Users", users);
+            // Перенаправление обратно к списку пользователей или на другую страницу
+            return RedirectToAction("Users"); // Название вашего метода отображения списка
         }        
     }
 }

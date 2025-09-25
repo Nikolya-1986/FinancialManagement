@@ -298,9 +298,10 @@ D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\rjimsw
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\staticwebassets.build.json.cache
-D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\0gu0rsyk30-264dbovzjw.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\lslmb14icz-2h5qc7fpbc.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\noekablawi-2h5qc7fpbc.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\xqeu6y1v6s-s5a7r6ujbx.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\lbb9cgpy1o-7ecqn930cx.gz
 D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\bin\Debug\net9.0\Newtonsoft.Json.dll
+D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\0gu0rsyk30-8sqsdhlbtq.gz
+D:\Work\Projects\C#\ASP.Net.Core_MVC\FinancialManagement\obj\Debug\net9.0\compressed\9zv4rrvrs6-4fw94nc0mc.gz

@@ -34,14 +34,14 @@
                 <td>@user.Tariff</td>
                 <td class="@roleClass">@user.Role</td>
                 <td>
-                    <form
-                        asp-action="DeleteUser"
-                        method="post"
-                        asp-route-id="@user.Id"
-                        onsubmit="return confirm('Вы точно хотите удалить пользователя @user.Name?');"
-                        >
+                    <!-- Пример ссылки на удаление -->
+                    <form asp-action="DeleteUser" method="post" asp-route-id="@user.Id" onsubmit="return confirm('Вы точно хотите удалить пользователя @user.Name?');">
                         <button type="submit" class="btn btn-danger btn-sm">Удалить</button>
                     </form>
+                    
+                    @* Или если хотите использовать ссылку с подтверждением *@
+                    @*<a href="@Url.Action("DeleteUser", new { id = user.Id })" class="btn btn-danger btn-sm" 
+                       onclick="return confirm('Вы точно хотите удалить пользователя @user.Name?');">Удалить</a>*@
                 </td>
             </tr>
         }

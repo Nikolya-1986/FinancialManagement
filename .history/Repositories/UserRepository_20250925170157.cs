@@ -1,7 +1,7 @@
 using FinancialManagement.Interfaces;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using FinancialManagement.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinancialManagement.Repositories
 {
