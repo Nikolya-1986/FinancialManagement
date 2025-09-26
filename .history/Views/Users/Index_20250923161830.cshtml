@@ -1,0 +1,27 @@
+@model IEnumerable<FinancialManagement.ViewModels.UserViewModel>
+@{
+    ViewData["Title"] = "Users";
+}
+
+ <h2 class="text-center">@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Имя пользователя</th>
+            <th>Email</th>
+            <th>Роли</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@string.Join(", ", user.Role)</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
