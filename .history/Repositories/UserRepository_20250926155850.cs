@@ -27,11 +27,12 @@ namespace FinancialManagement.Repositories
         public async Task<bool> DeleteUserById(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
+            Console.WriteLine("id", id);
+            Console.WriteLine("user", user);
             if (user == null)
             {
                 return false;
             }
-
             var result = await _userManager.DeleteAsync(user);
             return result.Succeeded;
         }

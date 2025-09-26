@@ -55,15 +55,16 @@ namespace FinancialManagement.Controllers
                 TempData["Error"] = "Не передан идентификатор пользователя.";
                 return RedirectToAction("Index");
             }
+            TempData["Message"] = $"передан идентификатор пользователя. {id}";
             bool success = await _userRepository.DeleteUserById(id);
+            Console.WriteLine($"success: {success}");
             if (success)
             {
-                TempData["SuccessMessage"] = "Пользователь успешно удален.";
+                TempData["Message"] = "Пользователь успешно удален.";
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "Не удалось удалить пользователя.");
-                // TempData["Error"] = "Не удалось удалить пользователя.";
+                TempData["Error"] = "Не удалось удалить пользователя.";
             }
 
             return RedirectToAction("Index");

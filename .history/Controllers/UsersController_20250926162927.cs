@@ -63,7 +63,7 @@ namespace FinancialManagement.Controllers
             else
             {
                 ModelState.AddModelError(string.Empty, "Не удалось удалить пользователя.");
-                // TempData["Error"] = "Не удалось удалить пользователя.";
+                TempData["Error"] = "Не удалось удалить пользователя.";
             }
 
             return RedirectToAction("Index");

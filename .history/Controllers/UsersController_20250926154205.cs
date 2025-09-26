@@ -49,24 +49,19 @@ namespace FinancialManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteUser(string id)
         {
-            Console.WriteLine($"Received id: {id}");
-            if (string.IsNullOrEmpty(id))
-            {
-                TempData["Error"] = "Не передан идентификатор пользователя.";
-                return RedirectToAction("Index");
-            }
             bool success = await _userRepository.DeleteUserById(id);
+
             if (success)
             {
-                TempData["SuccessMessage"] = "Пользователь успешно удален.";
+                TempData["Message"] = "Пользователь успешно удален.";
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "Не удалось удалить пользователя.");
-                // TempData["Error"] = "Не удалось удалить пользователя.";
+                TempData["Error"] = "Не удалось удалить пользователя.";
             }
 
+            var users =  await _userRepository.GetAllAsync();
             return RedirectToAction("Index");
-        }       
+        }        
     }
 }

@@ -18,6 +18,12 @@ namespace FinancialManagement.Repositories
 
         public async Task<List<ApplicationUser>> GetAllAsync()
         {
+            var allUsers = _userManager.Users.ToList();
+            Console.WriteLine("Все пользователи:");
+            foreach(var u in allUsers)
+            {
+                Console.WriteLine($"Id: {u.Id}, Name: {u.UserName}");
+            }
             return await _userManager.Users.ToListAsync();
         }
         public async Task<ApplicationUser> GetByEmailAsync(string email)
@@ -29,10 +35,18 @@ namespace FinancialManagement.Repositories
             var user = await _userManager.FindByIdAsync(id);
             if (user == null)
             {
+                Console.WriteLine("Пользователь не найден.");
                 return false;
             }
 
             var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    Console.WriteLine($"Ошибка удаления: {error.Code} - {error.Description}");
+                }
+            }
             return result.Succeeded;
         }
 

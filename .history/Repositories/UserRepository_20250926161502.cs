@@ -29,10 +29,18 @@ namespace FinancialManagement.Repositories
             var user = await _userManager.FindByIdAsync(id);
             if (user == null)
             {
+                Console.WriteLine("Пользователь не найден.");
                 return false;
             }
 
             var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    Console.WriteLine($"Ошибка удаления: {error.Code} - {error.Description}");
+                }
+            }
             return result.Succeeded;
         }
 
