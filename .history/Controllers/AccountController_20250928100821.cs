@@ -93,6 +93,7 @@ namespace FinancialManagement.Controllers
             var user = await _userRepository.GetByEmailAsync(model.Email);
             if (user == null)
             {
+                // ModelState.AddModelError("Email", "The user with this email is not registered.");
                 TempData["Error"] = "The user with this email is not registered.";
             }
             else
@@ -101,6 +102,7 @@ namespace FinancialManagement.Controllers
 
                 if (!passwordCorrect)
                 {
+                    // ModelState.AddModelError("Password", "Invalid password");
                     TempData["Error"] = "Invalid password";
                 }
                 else
@@ -126,6 +128,7 @@ namespace FinancialManagement.Controllers
                     }
                     else
                     {
+                        // ModelState.AddModelError(string.Empty, "Login error");
                         TempData["Error"] = "Login error";
                         return View(model);
                     }

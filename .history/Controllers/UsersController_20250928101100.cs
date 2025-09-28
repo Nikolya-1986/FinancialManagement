@@ -62,7 +62,7 @@ namespace FinancialManagement.Controllers
             }
             else
             {
-                TempData["Error"] = $"Failed to delete user. User with id {id} not found.";
+                TempData["Error"] = "Failed to delete user.";
             }
 
             return RedirectToAction("Index");

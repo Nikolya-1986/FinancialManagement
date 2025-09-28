@@ -62,7 +62,8 @@ namespace FinancialManagement.Controllers
             }
             else
             {
-                TempData["Error"] = $"Failed to delete user. User with id {id} not found.";
+                TempData["Error"] = "Failed to delete user.";
+                TempData["Error"] = $"Пользователь с id {id} не найден.";
             }
 
             return RedirectToAction("Index");

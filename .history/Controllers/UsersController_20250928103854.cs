@@ -55,7 +55,7 @@ namespace FinancialManagement.Controllers
                 return RedirectToAction("Index");
             }
 
-            bool success = await _userRepository.DeleteUserById(id);
+            bool success = await _userRepository.DeleteUserById("");
             if (success)
             {
                 TempData["Success"] = "The user was successfully deleted.";

@@ -4,6 +4,7 @@ using FinancialManagement.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using FinancialManagement.Data;
 using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace FinancialManagement.Controllers
 {
@@ -54,7 +55,6 @@ namespace FinancialManagement.Controllers
                 TempData["Error"] = "User ID not passed.";
                 return RedirectToAction("Index");
             }
-
             bool success = await _userRepository.DeleteUserById(id);
             if (success)
             {
@@ -62,7 +62,7 @@ namespace FinancialManagement.Controllers
             }
             else
             {
-                TempData["Error"] = $"Failed to delete user. User with id {id} not found.";
+                TempData["Error"] = "Failed to delete user.";
             }
 
             return RedirectToAction("Index");

@@ -55,14 +55,15 @@ namespace FinancialManagement.Controllers
                 return RedirectToAction("Index");
             }
 
-            bool success = await _userRepository.DeleteUserById(id);
+            bool success = await _userRepository.DeleteUserById("");
             if (success)
             {
                 TempData["Success"] = "The user was successfully deleted.";
             }
             else
             {
-                TempData["Error"] = $"Failed to delete user. User with id {id} not found.";
+                TempData["Error"] = "Failed to delete user.";
+                TempData["Error"] = $"Пользователь с id {id} не найден.";
             }
 
             return RedirectToAction("Index");

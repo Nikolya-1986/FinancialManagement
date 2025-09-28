@@ -29,6 +29,7 @@ namespace FinancialManagement.Repositories
             var user = await _userManager.FindByIdAsync(id);
             if (user == null)
             {
+                Console.WriteLine($"Пользователь с id {id} не найден.");
                 return false;
             }
 

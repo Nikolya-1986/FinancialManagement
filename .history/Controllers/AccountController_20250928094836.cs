@@ -73,8 +73,7 @@ namespace FinancialManagement.Controllers
             }
             else
             {
-                // ModelState.AddModelError("", "Failed to create user");
-                TempData["Error"] = "Failed to create user";
+                ModelState.AddModelError("", "Failed to create user");
                 return View(model);
             }
         }
@@ -93,7 +92,7 @@ namespace FinancialManagement.Controllers
             var user = await _userRepository.GetByEmailAsync(model.Email);
             if (user == null)
             {
-                TempData["Error"] = "The user with this email is not registered.";
+                ModelState.AddModelError("Email", "The user with this email is not registered.");
             }
             else
             {
@@ -101,7 +100,7 @@ namespace FinancialManagement.Controllers
 
                 if (!passwordCorrect)
                 {
-                    TempData["Error"] = "Invalid password";
+                    ModelState.AddModelError("Password", "Invalid password");
                 }
                 else
                 {
@@ -120,13 +119,13 @@ namespace FinancialManagement.Controllers
                         }
                         else
                         {
-                            TempData["Success"] = "You have successfully logged into your account.";
+                            TempData["SuccessMessage"] = "You have successfully logged into your account.";
                             return RedirectToAction("Index", "Home");
                         }
                     }
                     else
                     {
-                        TempData["Error"] = "Login error";
+                        ModelState.AddModelError(string.Empty, "Login error");
                         return View(model);
                     }
                 }
