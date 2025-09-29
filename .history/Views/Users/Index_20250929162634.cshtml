@@ -29,7 +29,7 @@
                 "manager" => "role-manager",
                 _ => "role-default"
             };
-            
+            @* var isCurrentUser = user.Id == currentUserId; *@
             <tr>
                 <td>@user.Name</td>
                 <td>@user.Email</td>
@@ -46,7 +46,7 @@
                     <form asp-action="ToggleBlockUser" method="post" style="display:inline;">
                         @Html.AntiForgeryToken()
                         <input type="hidden" name="id" value="@user.Id" />
-                        <button type="submit" class="btn @(user.IsBlocked ? "btn-success" : "btn-warning") btn-sm">
+                        <button type="submit" class="btn btn-warning btn-sm">
                             @(user.IsBlocked ? "Unblock" : "Block")
                         </button>
                     </form>

@@ -93,7 +93,7 @@ namespace FinancialManagement.Controllers
                 TempData["Success"] = $"Пользователь {(user.IsBlocked ? "заблокирован" : "разблокирован")}.";
             }
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Users");
         }
     }
 }

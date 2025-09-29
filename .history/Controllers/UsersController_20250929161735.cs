@@ -82,18 +82,10 @@ namespace FinancialManagement.Controllers
             }
 
             user.IsBlocked = !user.IsBlocked;
-            bool updateResult = await _userRepository.UpdateUserAsync(user);
+            await _userRepository.UpdateUserAsync(user);
 
-            if (!updateResult)
-            {
-                TempData["Error"] = "Ошибка при обновлении пользователя.";
-            }
-            else
-            {
-                TempData["Success"] = $"Пользователь {(user.IsBlocked ? "заблокирован" : "разблокирован")}.";
-            }
-
-            return RedirectToAction("Index");
+            TempData["Success"] = $"Пользователь {(user.IsBlocked ? "заблокирован" : "разблокирован")}.";
+            return RedirectToAction("Users");
         }
     }
 }
