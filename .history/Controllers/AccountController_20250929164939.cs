@@ -95,52 +95,53 @@ namespace FinancialManagement.Controllers
             if (user == null)
             {
                 TempData["Error"] = "The user with this email is not registered.";
-                ViewData["ReturnUrl"] = returnUrl;
-                return View(model);
             }
 
-            if (user.IsBlocked)
+            if (user!.IsBlocked)
             {
                 TempData["Error"] = "Your account has been blocked. Please contact the administrator.";
-                ViewData["ReturnUrl"] = returnUrl;
-                return View(model);
             }
 
-            // дальше проверяем пароль и выполняем вход
-            var passwordCorrect = await _userRepository.PasswordCorrect(user, model.Password);
-
-            if (!passwordCorrect)
+            else
             {
-                TempData["Error"] = "Invalid password";
-                ViewData["ReturnUrl"] = returnUrl;
-                return View(model);
-            }
+                var passwordCorrect = await _userRepository.PasswordCorrect(user, model.Password);
 
-            var result = await _signInManager.PasswordSignInAsync(
-                model.Email,
-                model.Password,
-                model.RememberMe,
-                lockoutOnFailure: false
-            );
-
-            if (result.Succeeded)
-            {
-                if (Url.IsLocalUrl(returnUrl))
+                if (!passwordCorrect)
                 {
-                    return Redirect(returnUrl);
+                    TempData["Error"] = "Invalid password";
                 }
                 else
                 {
-                    TempData["Success"] = "You have successfully logged into your account.";
-                    return RedirectToAction("Index", "Home");
+                    ViewData["ReturnUrl"] = returnUrl;
+                    var result = await _signInManager.PasswordSignInAsync(
+                        model.Email,
+                        model.Password,
+                        model.RememberMe,
+                        lockoutOnFailure: false
+                    );
+                    if (result.Succeeded)
+                    {
+                        if (Url.IsLocalUrl(returnUrl))
+                        {
+                            return Redirect(returnUrl);
+                        }
+                        else
+                        {
+                            TempData["Success"] = "You have successfully logged into your account.";
+                            return RedirectToAction("Index", "Home");
+                        }
+                    }
+                    else
+                    {
+                        TempData["Error"] = "Login error";
+                        return View(model);
+                    }
                 }
             }
-            else
-            {
-                TempData["Error"] = "Login error";
-                ViewData["ReturnUrl"] = returnUrl;
-                return View(model);
-            }
+            // Если мы дошли сюда — значит user == null или password неверен — возвращаем View с ошибками// Если мы дошли сюда — значит user == null
+            // или password неверен — возвращаем View с ошибками
+            ViewData["ReturnUrl"] = returnUrl;
+            return View(model);
         }
 
         [HttpPost]
