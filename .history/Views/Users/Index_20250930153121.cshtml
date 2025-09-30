@@ -53,7 +53,7 @@
                     </form>
                 </td>
                 <td>
-                    <a href="#" onclick="openRolesModal('@user.Id', '@user.Role')"  class="btn btn-primary btn-sm">
+                    <a asp-action="EditRoles" asp-route-id="@user.Id" class="btn btn-primary btn-sm">
                         Change role
                     </a>
                 </td>
@@ -62,4 +62,23 @@
     </tbody>
 </table>
 
-@Html.Partial("_UserRolesModal")
+<!-- Модальное окно для настройки ролей -->
+<div class="modal fade" id="roleModal" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="roleModalLabel">Настройка ролей</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Пользователь:</strong> <span id="modalUserName"></span></p>
+        <p><strong>Текущая роль:</strong> <span id="modalUserRole"></span></p>
+        <!-- Здесь можно разместить интерфейс для изменения ролей -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <!-- Можно добавить кнопку "Сохранить", если будете реализовывать изменение ролей -->
+      </div>
+    </div>
+  </div>
+</div>

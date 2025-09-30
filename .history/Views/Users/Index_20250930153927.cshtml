@@ -53,7 +53,7 @@
                     </form>
                 </td>
                 <td>
-                    <a href="#" onclick="openRolesModal('@user.Id', '@user.Role')"  class="btn btn-primary btn-sm">
+                    <a href="#" onclick="openRoleModal('@user.Id', '@user.Role')"  class="btn btn-primary btn-sm">
                         Change role
                     </a>
                 </td>
@@ -61,5 +61,33 @@
         }
     </tbody>
 </table>
-
-@Html.Partial("_UserRolesModal")
+<script>
+  function openRoleModal(userId, userRole) {
+    document.getElementById('modalUserId').textContent = userId;
+    document.getElementById('modalUserRole').textContent = userRole;
+    var myModal = new bootstrap.Modal(document.getElementById('roleModal'));
+    myModal.show();
+  }
+</script>
+<!-- Модальное окно для настройки ролей -->
+<div class="modal fade" id="roleModal" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="roleModalLabel">
+            Settings up roles
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        @* <p><strong>Пользователь:</strong> <span id="modalUserId"></span></p> *@
+        <p><strong>Current roles:</strong> <span id="modalUserRole"></span></p>
+        <!-- Здесь можно разместить интерфейс для изменения ролей -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- Можно добавить кнопку "Сохранить", если будете реализовывать изменение ролей -->
+      </div>
+    </div>
+  </div>
+</div>

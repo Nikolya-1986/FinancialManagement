@@ -53,7 +53,7 @@
                     </form>
                 </td>
                 <td>
-                    <a href="#" onclick="openRolesModal('@user.Id', '@user.Role')"  class="btn btn-primary btn-sm">
+                    <a asp-action="EditRoles" asp-route-id="@user.Id" class="btn btn-primary btn-sm">
                         Change role
                     </a>
                 </td>
@@ -61,5 +61,3 @@
         }
     </tbody>
 </table>
-
-@Html.Partial("_UserRolesModal")
