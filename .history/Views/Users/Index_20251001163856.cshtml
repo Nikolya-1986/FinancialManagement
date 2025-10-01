@@ -40,7 +40,7 @@
                     <form asp-action="DeleteUser" method="post" onsubmit="return confirm('Вы точно хотите удалить пользователя @user.Name?');">
                         @Html.AntiForgeryToken()
                         <input type="hidden" name="id" value="@user.Id" />
-                        <button type="submit" class="btn btn-danger btn-sm" disabled="@user.IsBlocked">Delete</button>
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                     </form>
                 </td>
                 <td>
@@ -53,8 +53,7 @@
                     </form>
                 </td>
                 <td>
-                    <button href="#" onclick="openRolesModal('@user.Id', '@user.Role')" class="btn btn-primary btn-sm"
-                        disabled="@user.IsBlocked">
+                    <button href="#" onclick="openRolesModal('@user.Id', '@user.Role')"  class="btn btn-primary btn-sm">
                         Change role
                     </button>
                 </td>

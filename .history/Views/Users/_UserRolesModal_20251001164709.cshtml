@@ -14,8 +14,9 @@
       <div class="modal-body">
         <p><strong>User id:</strong> <span id="modalUserId"></span></p>
         <p><strong>Current roles:</strong> <span id="modalUserRole"></span></p>
-        <label for="roleSelect" class="form-label"><strong>Select a new role:</strong></label>
-        <select id="roleSelect" class="form-select">
+        <label for="roleSelect" class="form-label">Select a new roles:</label>
+        <select>
+        </select id="roleSelect" class="form-select">
           @foreach(var role in roles)
           {
             <option value="@role">@role.ToString()</option>
