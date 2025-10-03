@@ -1,0 +1,93 @@
+@model IEnumerable<FinancialManagement.ViewModels.UserViewModel>
+@{
+    ViewData["Title"] = "Users";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/Users/Users.css" />
+}
+
+ <h2 class="text-center">@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Tariff</th>
+            <th>Roles</th>
+            <th>Delete</th>
+            <th>Lock / <br/>Unlock</th>
+            <th>Set roles</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            var roleClass = user.Role?.ToLower() switch
+            {
+                "admin" => "role-admin",
+                "manager" => "role-manager",
+                _ => "role-default"
+            };
+            
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Tariff</td>
+                <td class="@roleClass">@user.Role</td>
+                <td>
+                    <form asp-action="DeleteUser" method="post" onsubmit="return confirm('Вы точно хотите удалить пользователя @user.Name?');">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </td>
+                <td>
+                    <form asp-action="ToggleBlockUser" method="post" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <button type="submit" class="btn @(user.IsBlocked ? "btn-success" : "btn-warning") btn-sm">
+                            @(user.IsBlocked ? "Unblock" : "Block")
+                        </button>
+                    </form>
+                </td>
+                <td>
+                    <a href="#" onclick="openRoleModal('@user.Id', '@user.Role')"  class="btn btn-primary btn-sm">
+                        Change role
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+  function openRoleModal(userId, userRole) {
+    document.getElementById('modalUserName').textContent = userId;
+    document.getElementById('modalUserRole').textContent = userRole;
+    var myModal = new bootstrap.Modal(document.getElementById('roleModal'));
+    myModal.show();
+  }
+</script>
+<!-- Модальное окно для настройки ролей -->
+<div class="modal fade" id="roleModal" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="roleModalLabel">
+            Settings up roles
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Пользователь:</strong> <span id="modalUserName"></span></p>
+        <p><strong>Текущая роль:</strong> <span id="modalUserRole"></span></p>
+        <!-- Здесь можно разместить интерфейс для изменения ролей -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <!-- Можно добавить кнопку "Сохранить", если будете реализовывать изменение ролей -->
+      </div>
+    </div>
+  </div>
+</div>

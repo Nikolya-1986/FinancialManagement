@@ -1,0 +1,57 @@
+@model IEnumerable<FinancialManagement.ViewModels.UserViewModel>
+@{
+    ViewData["Title"] = "Users";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/Users/Users.css" />
+}
+
+ <h2 class="text-center">@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Имя пользователя</th>
+            <th>Email</th>
+            <th>Tariff</th>
+            <th>Роли</th>
+            <th>Удалить</th>
+            <th>Блокировка / <br/>Разблокировка</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            var roleClass = user.Role?.ToLower() switch
+            {
+                "admin" => "role-admin",
+                "manager" => "role-manager",
+                _ => "role-default"
+            };
+            @* var isCurrentUser = user.Id == currentUserId; *@
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Tariff</td>
+                <td class="@roleClass">@user.Role</td>
+                <td>
+                    <form asp-action="DeleteUser" method="post" onsubmit="return confirm('Вы точно хотите удалить пользователя @user.Name?');">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm">Удалить</button>
+                    </form>
+                </td>
+                <td>
+                    <form asp-action="ToggleBlockUser" method="post" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <button type="submit" class="btn btn-warning btn-sm">
+                            @(user.IsBlocked ? "Разблокировать" : "Заблокировать")
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

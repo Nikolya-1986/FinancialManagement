@@ -1,0 +1,18 @@
+﻿@model FinancialManagement.ViewModels.UserViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    var rolesDisplay = (Model.Roles != null && Model.Roles.Any())
+        ? string.Join(", ", Model.Roles)
+        : "Roles not assigned";
+}
+@if (User.Identity.IsAuthenticated && Model != null)
+{
+    
+    <h2>Добро пожаловать, @Model.Name!</h2>
+    <p>Email: @Model.Email</p>
+    <p>Ваш тариф: @Model.Tariff</p>
+    <p>Ваши роли: @rolesDisplay</p>
+}

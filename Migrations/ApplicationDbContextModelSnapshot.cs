@@ -41,6 +41,9 @@ namespace FinancialManagement.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<bool>("IsBlocked")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("tinyint(1)");
 
