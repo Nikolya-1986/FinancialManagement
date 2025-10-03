@@ -1,0 +1,66 @@
+@model IEnumerable<FinancialManagement.ViewModels.UserViewModel>
+@{
+    ViewData["Title"] = "Users";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/Users/Users.css" />
+}
+
+ <h2 class="text-center">@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Tariff</th>
+            <th>Roles</th>
+            <th>Delete</th>
+            <th>Lock / <br/>Unlock</th>
+            <th>Set roles</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            var roleClass = user.Role?.ToLower() switch
+            {
+                "admin" => "role-admin",
+                "manager" => "role-manager",
+                _ => "role-default"
+            };
+            
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Tariff</td>
+                <td class="@roleClass">@user.Role</td>
+                <td>
+                    <form asp-action="DeleteUser" method="post" onsubmit="return confirm('Вы точно хотите удалить пользователя @user.Name?');">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </td>
+                <td>
+                    <form asp-action="ToggleBlockUser" method="post" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <button type="submit" class="btn @(user.IsBlocked ? "btn-success" : "btn-warning") btn-sm">
+                            @(user.IsBlocked ? "Unblock" : "Block")
+                        </button>
+                    </form>
+                </td>
+                <td>
+                    <button href="#" onclick="openRolesModal('@user.Id', '@user.Role')" class="btn btn-primary btn-sm"
+                        disabled="@user.IsBlocked">
+                        Change role
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.Partial("_UserRolesModal")

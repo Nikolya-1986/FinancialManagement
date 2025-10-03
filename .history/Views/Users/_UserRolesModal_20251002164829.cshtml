@@ -1,0 +1,33 @@
+@using FinancialManagement.Data
+
+@{
+  var roles = Enum.GetValues(typeof(Role)).Cast<Role>();
+}
+
+<div class="modal" id="roleModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="post" asp-controller="Users" asp-action="UpdateUserRole">
+        @Html.AntiForgeryToken()
+        <input type="hidden" id="modalUserId" name="userId" />
+        <input type="hidden" id="selectedRole" name="newRole" />
+        <!-- остальные поля -->
+        <div class="modal-header">
+          <h5 class="modal-title">Change User Role</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>ID: <span id="modalUserIdDisplay"></span></p>
+          <select id="roleSelect" name="newRole" class="form-select">
+            <!-- опции ролей -->
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Update Role</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="~/js/modals.js"></script>

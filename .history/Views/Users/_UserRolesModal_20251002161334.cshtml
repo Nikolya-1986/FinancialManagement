@@ -1,0 +1,37 @@
+@using FinancialManagement.Data
+
+@{
+  var roles = Enum.GetValues(typeof(Role)).Cast<Role>();
+}
+
+<form id="updateRoleForm" method="post" asp-controller="Users" asp-action="UpdateUserRole">
+  <div class="modal fade" id="roleModal" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="roleModalLabel">Settings up roles</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>User id:</strong> <span id="modalUserIdDisplay"></span></p>
+          <p><strong>Current roles:</strong> <span id="modalUserRole"></span></p>
+
+          <input type="hidden" id="modalUserId" name="userId" />
+
+          <label for="roleSelect" class="form-label"><strong>Select a new role:</strong></label>
+          <select id="roleSelect" name="newRole" class="form-select">
+            @foreach(var role in roles)
+            {
+              <option value="@role">@role.ToString()</option>
+            }
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Update role</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<script src="~/js/modals.js"></script>
